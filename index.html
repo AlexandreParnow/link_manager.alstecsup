@@ -33,14 +33,6 @@
                         </ul>
                     </div>
                     <div id="menu1" class="col s12">
-                        <ul class="collection">
-                            <li class="collection-item">Link 1</li>
-                            <li class="collection-item">Link 2</li>
-                            <li class="collection-item">Link 3</li>
-                            <li class="collection-item">Link 4</li>
-                        </ul>
-                    </div>
-                    <div id="menu2" class="col s12">
                         <ul class="collapsible popout">
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 1</div>
@@ -83,6 +75,81 @@
                             </li>
                         </ul>
                     </div>
+                    <div id="menu2" class="col s12">
+                        <ul class="collapsible popout">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 1</div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <ul class="collection">
+                                            <li class="collection-item avatar">
+                                                <img src="img/img_base.png" alt="" class="circle">
+                                                <p>Instalador</p>
+                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
+                                                <span class="waves-effect waves-yellow btn secondary-content light-blue darken-4" id="toast" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <img src="img/img_base.png" alt="" class="circle">
+                                                <p>Instalador</p>
+                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
+                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <img src="img/img_base.png" alt="" class="circle">
+                                                <p>Instalador</p>
+                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
+                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <img src="img/img_base.png" alt="" class="circle">
+                                                <p>Instalador</p>
+                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
+                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <img src="img/img_base.png" alt="" class="circle">
+                                                <p>Instalador</p>
+                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
+                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
+                                            </li>
+                                            <li class="collection-item avatar">
+                                                <img src="img/img_base.png" alt="" class="circle">
+                                                <p>Instalador</p>
+                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
+                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
+                                            </li>
+                                         </ul>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 2</div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <ul class="collection">
+                                            <li class="collection-item">Link 1</li>
+                                            <li class="collection-item">Link 2</li>
+                                            <li class="collection-item">Link 3</li>
+                                            <li class="collection-item">Link 4</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 3</div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <ul class="collection">
+                                            <li class="collection-item">Link 1</li>
+                                            <li class="collection-item">Link 2</li>
+                                            <li class="collection-item">Link 3</li>
+                                            <li class="collection-item">Link 4</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <!--
                     <div id="menu3" class="col s12">Test 3</div>
                     <div id="menu4" class="col s12">Test 4</div>
@@ -91,10 +158,10 @@
             </main>
         </body>
         
-        <footer class="page-footer">
+        <footer>
             <div class="footer-copyright">
                 <div class="container">
-                    <p> © 2023 Alexandre Finotti Parnow </p>
+                    <p class="center"> © 2023 Alexandre Finotti Parnow </p>
                 </div>
             </div>
         </footer>
@@ -102,6 +169,7 @@
         <script src="js/jquery.min.js" typescript="script"></script>
         <script src="js/materialize.min.js" typescript="script"></script>
         <script src="js/main.js" typescript="script"></script>
+        <script src="js/copy.js" typescript="script"></script>
         <script>
             $(document).ready(function(){
                 $('.tabs').tabs();
@@ -114,6 +182,10 @@
 
             $(document).ready(function(){
                 $('.collapsible').collapsible();
+            });
+          
+            $("#toast").click(function(){
+                Materialize.toast('Link Copiado', 4000, 'rounded')
             });
         </script>
     </body>
