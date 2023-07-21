@@ -4,194 +4,130 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <title>Link Manager</title>
+        <title>Alstec Link Manager</title>
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/icon.css">
-        <link rel="stylesheet" href="css/materialize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
     </head>
+
     <body>
-        <header>
-            <div class="row col s12 container">
-                <div class="center">
-                    <h2>Empresa aqui!</h2>
-                    <h3>Link Manager</h3>
-                </div>
+        <header id="l-header" class="row container">
+            <div class="center-align">
+                <img id="logosec" src="img/logo.svg" alt="" class="responsive-img">
             </div>
         </header>
-        <body>
-            <main class="row col s12 container">
-                <div class="row">
-                    <div class="col s12">
-                        <ul class="tabs">
-                            <li class="tab col s6"><a href="#menu1">Menu 1</a></li>
-                            <li class="tab col s6"><a href="#menu2">Menu 2</a></li>
-                            <!--
-                            <li class="tab col s3"><a href="#menu3">Menu 3</a></li>
-                            <li class="tab col s3"><a href="#menu4">Menu 4</a></li>
-                            -->
-                        </ul>
-                    </div>
-                    <div id="menu1" class="col s12">
-                        <ul class="collapsible popout">
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 1</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <ul class="collection">
-                                            <li class="collection-item">Link 1</li>
-                                            <li class="collection-item">Link 2</li>
-                                            <li class="collection-item">Link 3</li>
-                                            <li class="collection-item">Link 4</li>
-                                         </ul>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 2</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <ul class="collection">
-                                            <li class="collection-item">Link 1</li>
-                                            <li class="collection-item">Link 2</li>
-                                            <li class="collection-item">Link 3</li>
-                                            <li class="collection-item">Link 4</li>
-                                        </ul>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 3</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <ul class="collection">
-                                            <li class="collection-item">Link 1</li>
-                                            <li class="collection-item">Link 2</li>
-                                            <li class="collection-item">Link 3</li>
-                                            <li class="collection-item">Link 4</li>
-                                        </ul>
-                                    </span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="menu2" class="col s12">
-                        <ul class="collapsible popout">
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 1</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <ul class="collection">
-                                            <li class="collection-item avatar">
-                                                <img src="img/img_base.png" alt="" class="circle">
-                                                <p>Instalador</p>
-                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
-                                                <span class="waves-effect waves-yellow btn secondary-content light-blue darken-4" id="toast" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <img src="img/img_base.png" alt="" class="circle">
-                                                <p>Instalador</p>
-                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
-                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <img src="img/img_base.png" alt="" class="circle">
-                                                <p>Instalador</p>
-                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
-                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <img src="img/img_base.png" alt="" class="circle">
-                                                <p>Instalador</p>
-                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
-                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <img src="img/img_base.png" alt="" class="circle">
-                                                <p>Instalador</p>
-                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
-                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
-                                            </li>
-                                            <li class="collection-item avatar">
-                                                <img src="img/img_base.png" alt="" class="circle">
-                                                <p>Instalador</p>
-                                                <a href="" target="_blank" class="valign-wrapper">Link 1</a>
-                                                <span class="waves-effect waves-light btn secondary-content" onclick="copiainstall1()"><i class="material-icons right">content_copy</i>Copiar</span>    
-                                            </li>
-                                         </ul>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 2</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <ul class="collection">
-                                            <li class="collection-item">Link 1</li>
-                                            <li class="collection-item">Link 2</li>
-                                            <li class="collection-item">Link 3</li>
-                                            <li class="collection-item">Link 4</li>
-                                        </ul>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">new_releases</i>Link List 3</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <ul class="collection">
-                                            <li class="collection-item">Link 1</li>
-                                            <li class="collection-item">Link 2</li>
-                                            <li class="collection-item">Link 3</li>
-                                            <li class="collection-item">Link 4</li>
-                                        </ul>
-                                    </span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--
-                    <div id="menu3" class="col s12">Test 3</div>
-                    <div id="menu4" class="col s12">Test 4</div>
-                    -->
-                </div>
-            </main>
-        </body>
-        
-        <footer>
-            <div class="footer-copyright">
-                <div class="container">
-                    <p class="center"> © 2023 Alexandre Finotti Parnow </p>
+
+        <main id="l-main" class="container">
+            <div class="row col s12 m12 l12 xl12">
+                <div class="col s12 m10 l8 xl8 offset-s0 offset-m1 offset-l2 offset-xl2">
+                    <ul class="collapsible expandable popout">
+                        <li>
+                            <!--Começo da lista de links institucionais-->
+                            <div class="collapsible-header"><i class="material-icons">domain</i>Aplicações Internas</div>
+                            <div class="collapsible-body" id="conteudo">
+                                <span class="spanop" data-href="#">
+                                    <a>Link 1</a>
+                                </span>
+                                <span class="spanop" data-href="#">
+                                    <a>Link 2</a>
+                                </span>
+                                <span class="spanop" data-href="#">
+                                    <a>Link 3</a>
+                                </span>
+                                <span class="spanop" data-href="#">
+                                    <a>Link 5</a>
+                                </span>
+                                <span class="spanop" data-href="#">
+                                    <a>Link 6</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <!--Começo da lista de links de uso interno geral-->
+                            <div class="collapsible-header"><i class="material-icons">widgets</i>Fabricantes</div>
+                            <div class="collapsible-body" id="conteudo">
+                                <span class="spanop" data-href="#">
+                                    <a>Registro Ligações</a>
+                                </span>
+                                <span class="spanop" data-href="https://secullum.octadesk.com/">
+                                    <a>Octadesk</a>
+                                </span>
+                                <span class="spanop" data-href="http://bugtracker.secullum.com.br/default.aspx">
+                                    <a>Bugtracker</a>
+                                </span>
+                                <span class="spanop" data-href="https://portal.office.com/">
+                                    <a>Outlook Web</a>
+                                </span>
+                                <span class="spanop" data-href="https://centraldofuncionario.com.br/10646/">
+                                    <a>Central do Funcionário</a>
+                                </span>
+                                <span class="spanop" data-href="paginas/chamados_ti.html">
+                                    <a>Chamados TI</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <!--Começo da lista de links de uso suporte e dev-->
+                            <div class="collapsible-header"><i class="material-icons">support_agent</i>Instaladores</div>
+                            <div class="collapsible-body" id="conteudo">
+                                <span class="spanop" data-href="https://secullum.sharepoint.com/sites/kbsuporte">
+                                    <a>Base de conhecimento Suporte</a>
+                                </span>
+                                <!--
+                                <span class="spanop" data-href="https://secullum.sharepoint.com/sites/servicedesk">
+                                    <a>Base de conhecimento Service Desk</a>
+                                </span>
+                                -->
+                                <span class="spanop" data-href="http://acessonetweb.secullum.com.br/Teste">
+                                    <a>Acesso.Net Web</a>
+                                </span>
+                                <span class="spanop" data-href="paginas/registro_ligacoes.html">
+                                    <a>Form Registro Ligações (Contingência)</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <!--Começo da lista de links de arquivos-->
+                            <div class="collapsible-header"><i class="material-icons">document_scanner</i>Arquivos</div>
+                            <div class="collapsible-body" id="conteudo">
+                                <span class="spanop" data-href="arquivos/feriados.pdf">
+                                    <a>Feriados (PDF)</a>
+                                </span>
+                                <span class="spanop" data-href="arquivos/ramais.pdf">
+                                    <a>Ramais (PDF)</a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-
-        <script src="js/jquery.min.js" typescript="script"></script>
-        <script src="js/materialize.min.js" typescript="script"></script>
-        <script src="js/main.js" typescript="script"></script>
-        <script src="js/copy.js" typescript="script"></script>
-        <script>
-            $(document).ready(function(){
-                $('.tabs').tabs();
-            });
-
-            var elem = document.querySelector('.collapsible.expandable');
-            var instance = M.Collapsible.init(elem, {
-            accordion: false
-            });
-
-            $(document).ready(function(){
-                $('.collapsible').collapsible();
-            });
-          
-            $("#toast").click(function(){
-                Materialize.toast('Link Copiado', 4000, 'rounded')
-            });
-        </script>
+        </main>
     </body>
-</html>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        var elem = document.querySelector('.collapsible.expandable');
+        var instance = M.Collapsible.init(elem, {
+        accordion: false
+        });
 
-<!--
-    Link para web
-    https://alexandreparnow.github.io/link_manager.alstecsup/
--->
+        $(document).on('click', 'span', function(e){ 
+            e.preventDefault(); 
+            var url = $(this).data("href"); 
+            window.open(url, '_blank');
+        });
+    </script>
+
+    <!--
+        LINKS PRESENTES NO KB
+        gateway - "http://gateway.secullum.com.br/conexoeshub"
+        pontoweb - "https://pontowebcomunicacao.secullum.com.br/conexoeshub"
+
+        Descontinuado
+        https://www.secullum.com.br/ponto4web
+    -->
+
+
+</html>

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-image: url(../img/background.svg);
+}
+
+#l-header{
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    padding: 30px 0px 15px 0px;
+}
+
+#logosec{
+    width: 320px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+#conteudo{
+    padding: 0rem !important;
+}
+
+.spanop{
+    width: 100%;
+    display: inline-block;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.spanop a{
+    color: #000000;
+}
+
+/*
+.spanop a:hover{
+    color: #ffffff;
+}
+*/
+
+.spanop:hover{
+    background-color: #f79733;
+}
+
+.collapsible-header{
+    background-color: #727376 !important;
+    color: #ffffff;
+}
+
+.collapsible-body{
+    background-color: #ffffff !important;   
+}
