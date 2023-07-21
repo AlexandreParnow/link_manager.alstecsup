@@ -14,7 +14,7 @@
     <body>
         <header id="l-header" class="row container">
             <div class="center-align">
-                <img id="logosec" src="img/logo.svg" alt="" class="responsive-img">
+                <img id="logosec" src="img/logo.png" alt="" class="responsive-img">
             </div>
         </header>
 
@@ -23,90 +23,132 @@
                 <div class="col s12 m10 l8 xl8 offset-s0 offset-m1 offset-l2 offset-xl2">
                     <ul class="collapsible expandable popout">
                         <li>
-                            <!--Começo da lista de links institucionais-->
+                            <!--Link para acesso a sites internos-->
                             <div class="collapsible-header"><i class="material-icons">domain</i>Aplicações Internas</div>
                             <div class="collapsible-body" id="conteudo">
-                                <span class="spanop" data-href="#">
-                                    <a>Link 1</a>
+                                <span class="spanop" data-href="https://alstec.movidesk.com/Account/Login">
+                                    <a>Movidesk<i class="material-icons right">launch</i></a>
                                 </span>
-                                <span class="spanop" data-href="#">
-                                    <a>Link 2</a>
+                                <span class="spanop" data-href="https://app.pinkapp.com/home">
+                                    <a>Pink Chat<i class="material-icons right">launch</i></a>
                                 </span>
-                                <span class="spanop" data-href="#">
-                                    <a>Link 3</a>
+                                <span class="spanop" data-href="https://app.vhsys.com.br/index.php">
+                                    <a>VHSYS<i class="material-icons right">launch</i></a>
                                 </span>
-                                <span class="spanop" data-href="#">
-                                    <a>Link 5</a>
-                                </span>
-                                <span class="spanop" data-href="#">
-                                    <a>Link 6</a>
+                                <span class="spanop" data-href="equipealstec.slack.com">
+                                    <a>Slack<i class="material-icons right">launch</i></a>
                                 </span>
                             </div>
                         </li>
                         <li>
-                            <!--Começo da lista de links de uso interno geral-->
+                            <!--Links para acesso aos sistemas de ponto-->
+                            <div class="collapsible-header"><i class="material-icons">cloud_queue</i>Sistemas de Ponto</div>
+                            <div class="collapsible-body" id="conteudo">
+                                <span class="spanop" data-href="https://autenticador.secullum.com.br/Authorization?response_type=code&client_id=3&redirect_uri=https%3A%2F%2Fpontoweb.secullum.com.br%2FAuth">
+                                    <a>Secullum - PontoWeB<i class="material-icons right">launch</i></a>
+                                </span>
+                                <span class="spanop" data-href="https://www.rhid.com.br/v2/#/login">
+                                    <a>ControliD - RHiD<i class="material-icons right">launch</i></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <!--Links para acesso a site de fabricantes-->
                             <div class="collapsible-header"><i class="material-icons">widgets</i>Fabricantes</div>
                             <div class="collapsible-body" id="conteudo">
-                                <span class="spanop" data-href="#">
-                                    <a>Registro Ligações</a>
+                                <span class="spanop" data-href="https://www.secullum.com.br/AreaRestrita/login">
+                                    <a>Revendedor Secullum<i class="material-icons right">launch</i></a>
                                 </span>
-                                <span class="spanop" data-href="https://secullum.octadesk.com/">
-                                    <a>Octadesk</a>
+                                <span class="spanop" data-href="http://painel.controlid.com.br/Login.aspx">
+                                    <a>Desbloqueio iDClass<i class="material-icons right">launch</i></a>
                                 </span>
-                                <span class="spanop" data-href="http://bugtracker.secullum.com.br/default.aspx">
-                                    <a>Bugtracker</a>
-                                </span>
-                                <span class="spanop" data-href="https://portal.office.com/">
-                                    <a>Outlook Web</a>
-                                </span>
-                                <span class="spanop" data-href="https://centraldofuncionario.com.br/10646/">
-                                    <a>Central do Funcionário</a>
-                                </span>
-                                <span class="spanop" data-href="paginas/chamados_ti.html">
-                                    <a>Chamados TI</a>
+                                <span class="spanop" data-href="https://souparceiro.topdata.com.br/#/auth/login">
+                                    <a>Parceiro Topdata<i class="material-icons right">launch</i></a>
                                 </span>
                             </div>
                         </li>
                         <li>
-                            <!--Começo da lista de links de uso suporte e dev-->
-                            <div class="collapsible-header"><i class="material-icons">support_agent</i>Instaladores</div>
+                            <!--link para instaladores e atualizadores-->
+                            <div class="collapsible-header"><i class="material-icons"><span class="material-icons">file_download</span></i>Instaladores</div>
                             <div class="collapsible-body" id="conteudo">
-                                <span class="spanop" data-href="https://secullum.sharepoint.com/sites/kbsuporte">
-                                    <a>Base de conhecimento Suporte</a>
+                                <div class="spanop">
+                                    <a href="https://download.secullum.com.br/PontoWebComunicacaoSetup.exe" target="_blank">PontoWeb (comunicador)</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_pw()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                <div class="spanop">
+                                    <a href="https://download.secullum.com.br/SecullumPontoOffline-setup.exe" target="_blank">Ponto Offline (instalador)</a>
+                                    <button id="toast" class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_intoff()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                <div class="spanop">
+                                    <a href="https://download.secullum.com.br/at-ponto-offline.exe" target="_blank">Ponto Offline (atualizador)</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_atoff()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                <div class="spanop">
+                                    <a href="https://download.secullum.com.br/ponto4/Pontosec4-setup.exe" target="_blank">Ponto 4 (instalador)</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_intp4()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                <div class="spanop">
+                                    <a href="https://download.secullum.com.br/at-ponto4.exe" target="_blank">Ponto 4 (atualizador)</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_atp4()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                <div class="spanop">
+                                    <a href="https://download.secullum.com.br/SecullumAcesso-setup.exe" target="_blank">Acesso (instalador)</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_intacesso()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                <div class="spanop">
+                                    <a href="https://download.secullum.com.br/at-acesso.exe" target="_blank">Acesso (atualizador)</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_atacesso()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                <div class="spanop">
+                                    <a href="https://download.secullum.com.br/acessonet/AcessoNetSetup.exe" target="_blank">Acesso.Net (instalador)</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_intacnet()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                <div class="spanop">
+                                    <a href="https://download.secullum.com.br/at-acessonet.exe" target="_blank">Acesso.Net (atualizador)</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_atacnet()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                            </div>
+                        </li>
+                        <!--
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">terminal</i>Programas</div>
+                            <div class="collapsible-body" id="conteudo">
+                                <span class="spanop" data-href="#">
+                                    <a>Arq 1</a>
                                 </span>
-                                <!--
-                                <span class="spanop" data-href="https://secullum.sharepoint.com/sites/servicedesk">
-                                    <a>Base de conhecimento Service Desk</a>
-                                </span>
-                                -->
-                                <span class="spanop" data-href="http://acessonetweb.secullum.com.br/Teste">
-                                    <a>Acesso.Net Web</a>
-                                </span>
-                                <span class="spanop" data-href="paginas/registro_ligacoes.html">
-                                    <a>Form Registro Ligações (Contingência)</a>
+                                <span class="spanop" data-href="#">
+                                    <a>Arq 2</a>
                                 </span>
                             </div>
                         </li>
                         <li>
-                            <!--Começo da lista de links de arquivos-->
                             <div class="collapsible-header"><i class="material-icons">document_scanner</i>Arquivos</div>
                             <div class="collapsible-body" id="conteudo">
-                                <span class="spanop" data-href="arquivos/feriados.pdf">
-                                    <a>Feriados (PDF)</a>
+                                <span class="spanop" data-href="#">
+                                    <a>Arq 1</a>
                                 </span>
-                                <span class="spanop" data-href="arquivos/ramais.pdf">
-                                    <a>Ramais (PDF)</a>
+                                <span class="spanop" data-href="#">
+                                    <a>Arq 2</a>
                                 </span>
                             </div>
                         </li>
+                        -->
                     </ul>
                 </div>
             </div>
         </main>
     </body>
+    <footer>
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="center"> © 2023 Alexandre Finotti Parnow </p>
+            </div>
+        </div>
+    </footer>
     
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/copy.js"></script>
     <script>
         var elem = document.querySelector('.collapsible.expandable');
         var instance = M.Collapsible.init(elem, {
@@ -118,16 +160,14 @@
             var url = $(this).data("href"); 
             window.open(url, '_blank');
         });
+
+        $("#toast").click(function(){
+            Materialize.toast('Link Copiado', 4000, 'rounded')
+        });
     </script>
-
-    <!--
-        LINKS PRESENTES NO KB
-        gateway - "http://gateway.secullum.com.br/conexoeshub"
-        pontoweb - "https://pontowebcomunicacao.secullum.com.br/conexoeshub"
-
-        Descontinuado
-        https://www.secullum.com.br/ponto4web
-    -->
-
-
 </html>
+
+<!--
+    Link para web
+    https://alexandreparnow.github.io/link_manager.alstecsup/
+-->

@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(../img/background.svg);
+    background-image: url(../img/background.jpg);
 }
 
 #l-header{
@@ -45,14 +45,18 @@ body{
 */
 
 .spanop:hover{
-    background-color: #f79733;
+    background-color: #9CB535;
 }
 
 .collapsible-header{
-    background-color: #727376 !important;
+    background-color: #2D4F8F !important;
     color: #ffffff;
 }
 
 .collapsible-body{
     background-color: #ffffff !important;   
+}
+
+p{
+    font-size: 14px;
 }
