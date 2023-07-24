@@ -1,3 +1,4 @@
+//LISTA DE LINKS ATUALIZADORES E INSTALADORES
 //lista de installs
 let copiainstall_pw = () => {
     //O texto que será copiado
@@ -172,6 +173,75 @@ let copiainstall_intacnet = () => {
 let copiainstall_atacnet = () => {
     //O texto que será copiado
     const texto = "https://download.secullum.com.br/at-acessonet.exe";
+    //Cria um elemento input (pode ser um textarea)
+    let inputTest = document.createElement("input");
+    inputTest.value = texto;
+    //Anexa o elemento ao body
+    document.body.appendChild(inputTest);
+    //seleciona todo o texto do elemento
+    inputTest.select();
+    //executa o comando copy
+    //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+    document.execCommand('copy');
+    //remove o elemento
+    document.body.removeChild(inputTest);
+};
+
+//LISTA DE LINKS PARA PACOTES DE COMUNICAÇÃO
+let copiainstall_controlid = () => {
+    //O texto que será copiado
+    const texto = "http://www.secullum.com.br/at-controlid.exe";
+    //Cria um elemento input (pode ser um textarea)
+    let inputTest = document.createElement("input");
+    inputTest.value = texto;
+    //Anexa o elemento ao body
+    document.body.appendChild(inputTest);
+    //seleciona todo o texto do elemento
+    inputTest.select();
+    //executa o comando copy
+    //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+    document.execCommand('copy');
+    //remove o elemento
+    document.body.removeChild(inputTest);
+};
+
+let copiainstall_topdata = () => {
+    //O texto que será copiado
+    const texto = "http://www.secullum.com.br/at-top.exe";
+    //Cria um elemento input (pode ser um textarea)
+    let inputTest = document.createElement("input");
+    inputTest.value = texto;
+    //Anexa o elemento ao body
+    document.body.appendChild(inputTest);
+    //seleciona todo o texto do elemento
+    inputTest.select();
+    //executa o comando copy
+    //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+    document.execCommand('copy');
+    //remove o elemento
+    document.body.removeChild(inputTest);
+};
+
+let copiainstall_proveu = () => {
+    //O texto que será copiado
+    const texto = "http://www.secullum.com.br/at-proveu.exe";
+    //Cria um elemento input (pode ser um textarea)
+    let inputTest = document.createElement("input");
+    inputTest.value = texto;
+    //Anexa o elemento ao body
+    document.body.appendChild(inputTest);
+    //seleciona todo o texto do elemento
+    inputTest.select();
+    //executa o comando copy
+    //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+    document.execCommand('copy');
+    //remove o elemento
+    document.body.removeChild(inputTest);
+};
+
+let copiainstall_henry = () => {
+    //O texto que será copiado
+    const texto = "http://www.secullum.com.br/at-henry.exe";
     //Cria um elemento input (pode ser um textarea)
     let inputTest = document.createElement("input");
     inputTest.value = texto;
