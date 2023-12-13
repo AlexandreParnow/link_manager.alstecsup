@@ -64,6 +64,11 @@ p{
     font-size: 14px;
 }
 
+#btn-color{
+    background-color: #2D4F8F;
+    color: #ffffff;
+}
+
 
 #versao{
     font-size: 10px;

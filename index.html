@@ -10,14 +10,12 @@
         <link type="text/css" rel="stylesheet" href="css/main.css">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
     </head>
-
     <body>
         <header id="l-header" class="row container">
             <div class="center-align">
                 <img id="logosec" src="img/logo.png" alt="" class="responsive-img">
             </div>
         </header>
-
         <main id="l-main" class="container">
             <div class="row col s12 m12 l12 xl12">
                 <div class="col s12 m10 l8 xl8 offset-s0 offset-m1 offset-l2 offset-xl2">
@@ -37,6 +35,9 @@
                                 </span>
                                 <span class="spanop" data-href="https://equipealstec.slack.com">
                                     <a>Slack<i class="material-icons right">launch</i></a>
+                                </span>
+                                <span class="spanop" data-href="https://centraldofuncionario.com.br/47199/">
+                                    <a>Central do Funcionario<i class="material-icons right">launch</i></a>
                                 </span>
                             </div>
                         </li>
@@ -59,8 +60,8 @@
                                 <span class="spanop" data-href="https://www.secullum.com.br/AreaRestrita/login">
                                     <a>Revendedor Secullum<i class="material-icons right">launch</i></a>
                                 </span>
-                                <span class="spanop" data-href="http://painel.controlid.com.br/Login.aspx">
-                                    <a>Desbloqueio iDClass<i class="material-icons right">launch</i></a>
+                                <span class="spanop" data-href="https://www.rhid.com.br/v2/#/login">
+                                    <a>Desbloqueio iDClass (RHiD)<i class="material-icons right">launch</i></a>
                                 </span>
                                 <span class="spanop" data-href="https://souparceiro.topdata.com.br/#/auth/login">
                                     <a>Parceiro Topdata<i class="material-icons right">launch</i></a>
@@ -73,47 +74,47 @@
                             <div class="collapsible-body" id="conteudo">
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/PontoWebComunicacaoSetup.exe" target="_blank">PontoWeb (comunicador)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_pw()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_pw()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://gateway.secullum.com.br/GatewayComunicacaoSetup.exe" target="_blank">Gateway (comunicador)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_gat()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_gat()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/SecullumCheckinSetup.exe" target="_blank">Checkin (instalador windows)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_check()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_check()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/SecullumPontoOffline-setup.exe" target="_blank">Ponto Offline (instalador)</a>
-                                    <button id="toast" class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_intoff()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_intoff()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/at-ponto-offline.exe" target="_blank">Ponto Offline (atualizador)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_atoff()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_atoff()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/ponto4/Pontosec4-setup.exe" target="_blank">Ponto 4 (instalador)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_intp4()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_intp4()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/at-ponto4.exe" target="_blank">Ponto 4 (atualizador)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_atp4()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_atp4()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/SecullumAcesso-setup.exe" target="_blank">Acesso (instalador)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_intacesso()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_intacesso()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/at-acesso.exe" target="_blank">Acesso (atualizador)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_atacesso()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_atacesso()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/acessonet/AcessoNetSetup.exe" target="_blank">Acesso.Net (instalador)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_intacnet()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_intacnet()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/at-acessonet.exe" target="_blank">Acesso.Net (atualizador)</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_atacnet()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_atacnet()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                             </div>
                         </li>
@@ -123,34 +124,57 @@
                             <div class="collapsible-body" id="conteudo">
                                 <div class="spanop">
                                     <a href="http://www.secullum.com.br/at-controlid.exe" target="_blank">ControliD</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_controlid()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_controlid()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="http://www.secullum.com.br/at-top.exe" target="_blank">Topdata</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_topdata()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_topdata()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="http://www.secullum.com.br/at-proveu.exe" target="_blank">Proveu</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_proveu()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_proveu()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
                                 <div class="spanop">
                                     <a href="http://www.secullum.com.br/at-henry.exe" target="_blank">Henry</a>
-                                    <button class="waves-effect waves-yellow btn secondary-content light-blue darken-4" onclick="copiainstall_henry()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_henry()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">sd_card</i>Executaveis</div>
+                            <div class="collapsible-body" id="conteudo">
+                                
+                                <div class="spanop">
+                                    <a  href="#">Em breve</a>
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">announcement</i></a>
+                                    <!-- Modal Structure -->
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <h4>Modal Header</h4>
+                                            <p>A bunch of text 1</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="spanop">
+                                    <a  href="#">Em breve</a>
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal2"><i class="material-icons">announcement</i></a>
+                                    <!-- Modal Structure -->
+                                    <div id="modal2" class="modal">
+                                        <div class="modal-content">
+                                            <h4>Modal Header</h4>
+                                            <p>A bunch of text 2</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <!--
-                        <li>
-                            <div class="collapsible-header"><i class="material-icons">terminal</i>Programas</div>
-                            <div class="collapsible-body" id="conteudo">
-                                <span class="spanop" data-href="#">
-                                    <a>Arq 1</a>
-                                </span>
-                                <span class="spanop" data-href="#">
-                                    <a>Arq 2</a>
-                                </span>
-                            </div>
-                        </li>
                         <li>
                             <div class="collapsible-header"><i class="material-icons">document_scanner</i>Arquivos</div>
                             <div class="collapsible-body" id="conteudo">
@@ -171,14 +195,13 @@
     <footer>
         <div class="footer-copyright">
             <div class="container">
-                <p class="center">© 2023 Alexandre Finotti Parnow</p>
+                <p class="center">Copyright (c) 2023 Alexandre Finotti Parnow</p>
             </div>
             <div class="container">
-                <p id="versao" class="center">Link Manager v0.8</p>
+                <p id="versao" class="center">Link Manager v0.9</p>
             </div>
         </div>
     </footer>
-    
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/copy.js"></script>
@@ -194,13 +217,19 @@
             window.open(url, '_blank');
         });
 
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+
         $("#toast").click(function(){
             Materialize.toast('Link Copiado', 4000, 'rounded')
         });
     </script>
 </html>
-
 <!--
     Link para web
     https://alexandreparnow.github.io/link_manager.alstecsup/
+
+    Links Descontinuados
+    http://painel.controlid.com.br/Login.aspx
 -->
