@@ -140,41 +140,40 @@
                                 </div>
                             </div>
                         </li>
+                        <!--VIDEOS PROCEDIMENTOS-->
                         <li>
-                            <div class="collapsible-header"><i class="material-icons">sd_card</i>Executaveis</div>
+                            <div class="collapsible-header"><i class="material-icons">video_library</i>Videos</div>
                             <div class="collapsible-body" id="conteudo">
-                                
                                 <div class="spanop">
-                                    <a  href="#">Em breve</a>
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">announcement</i></a>
-                                    <!-- Modal Structure -->
-                                    <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                            <h4>Modal Header</h4>
-                                            <p>A bunch of text 1</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="spanop">
-                                    <a  href="#">Em breve</a>
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal2"><i class="material-icons">announcement</i></a>
+                                    <a  href="#">iDClass - Cadastro de empregador</a>
+                                    
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal2"><i class="material-icons">play_circle_filled</i></a>
                                     <!-- Modal Structure -->
                                     <div id="modal2" class="modal">
                                         <div class="modal-content">
-                                            <h4>Modal Header</h4>
-                                            <p>A bunch of text 2</p>
+                                            <div class="video-container">
+                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/mvcSxRgfZ60?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Cadastro de empregador no REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
                                         </div>
-                                        <div class="modal-footer">
-                                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                                    </div>
+                                </div>
+
+                                <div class="spanop">
+                                    <a  href="#">iDClass - Configuração de Rede</a>
+                                    
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
+                                    <!-- Modal Structure -->
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <div class="video-container">
+                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/0Pt_XTO1Rfw" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <!--
+<!--
                         <li>
                             <div class="collapsible-header"><i class="material-icons">document_scanner</i>Arquivos</div>
                             <div class="collapsible-body" id="conteudo">
@@ -186,7 +185,19 @@
                                 </span>
                             </div>
                         </li>
-                        -->
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">document_scanner</i>Arquivos</div>
+                            <div class="collapsible-body" id="conteudo">
+                                <span class="spanop" data-href="#">
+                                    <a>Arq 1</a>
+                                </span>
+                                <span class="spanop" data-href="#">
+                                    <a>Arq 2</a>
+                                </span>
+                            </div>
+                        </li>
+ -->
                     </ul>
                 </div>
             </div>
@@ -198,7 +209,7 @@
                 <p class="center">Copyright (c) 2023 Alexandre Finotti Parnow</p>
             </div>
             <div class="container">
-                <p id="versao" class="center">Link Manager v0.9</p>
+                <p id="versao" class="center">Link Manager v1.0.0</p>
             </div>
         </div>
     </footer>
@@ -224,8 +235,13 @@
         $("#toast").click(function(){
             Materialize.toast('Link Copiado', 4000, 'rounded')
         });
+
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
     </script>
 </html>
+
 <!--
     Link para web
     https://alexandreparnow.github.io/link_manager.alstecsup/
