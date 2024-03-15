@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<!-- https://alexandreparnow.github.io/link_manager.alstecsup/ -->
+
 <html lang="pt-br">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,143 +13,181 @@
         <link type="text/css" rel="stylesheet" href="css/main.css">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
     </head>
+
     <body>
         <header id="l-header" class="row container">
             <div class="center-align">
                 <img id="logosec" src="img/logo.png" alt="" class="responsive-img">
             </div>
         </header>
+
         <main id="l-main" class="container">
             <div class="row col s12 m12 l12 xl12">
                 <div class="col s12 m10 l8 xl8 offset-s0 offset-m1 offset-l2 offset-xl2">
                     <ul class="collapsible expandable popout">
-                        <li>
-                            <!--Link para acesso a sites internos-->
+                        
+                        <li><!--Link para acesso a sites internos-->
                             <div class="collapsible-header"><i class="material-icons">domain</i>Aplicações Internas</div>
                             <div class="collapsible-body" id="conteudo">
+
                                 <span class="spanop" data-href="https://alstec.movidesk.com/Account/Login">
                                     <a>Movidesk<i class="material-icons right">launch</i></a>
                                 </span>
+                                
                                 <span class="spanop" data-href="https://app.pinkapp.com/home">
                                     <a>Pink Chat<i class="material-icons right">launch</i></a>
                                 </span>
+                                
                                 <span class="spanop" data-href="https://app.vhsys.com.br/index.php">
                                     <a>VHSYS<i class="material-icons right">launch</i></a>
                                 </span>
+                                
                                 <span class="spanop" data-href="https://equipealstec.slack.com">
                                     <a>Slack<i class="material-icons right">launch</i></a>
                                 </span>
+                                
                                 <span class="spanop" data-href="https://centraldofuncionario.com.br/47199/">
                                     <a>Central do Funcionario<i class="material-icons right">launch</i></a>
                                 </span>
+
                             </div>
                         </li>
-                        <li>
-                            <!--Links para acesso aos sistemas de ponto-->
+
+                        <li><!--Links para acesso aos sistemas de ponto-->
                             <div class="collapsible-header"><i class="material-icons">cloud_queue</i>Sistemas de Ponto</div>
                             <div class="collapsible-body" id="conteudo">
+                                
                                 <span class="spanop" data-href="https://autenticador.secullum.com.br/Authorization?response_type=code&client_id=3&redirect_uri=https%3A%2F%2Fpontoweb.secullum.com.br%2FAuth">
                                     <a>Secullum - PontoWeB<i class="material-icons right">launch</i></a>
                                 </span>
+                                
                                 <span class="spanop" data-href="https://www.rhid.com.br/v2/#/login">
                                     <a>ControliD - RHiD<i class="material-icons right">launch</i></a>
                                 </span>
+
                             </div>
                         </li>
-                        <li>
-                            <!--Links para acesso a site de fabricantes-->
+
+                        <li><!--Links para acesso a site de fabricantes-->    
                             <div class="collapsible-header"><i class="material-icons">widgets</i>Fabricantes</div>
                             <div class="collapsible-body" id="conteudo">
+                                
                                 <span class="spanop" data-href="https://www.secullum.com.br/AreaRestrita/login">
                                     <a>Revendedor Secullum<i class="material-icons right">launch</i></a>
                                 </span>
+                                
                                 <span class="spanop" data-href="https://www.rhid.com.br/v2/#/login">
                                     <a>Desbloqueio iDClass (RHiD)<i class="material-icons right">launch</i></a>
                                 </span>
+                                
                                 <span class="spanop" data-href="https://souparceiro.topdata.com.br/#/auth/login">
                                     <a>Parceiro Topdata<i class="material-icons right">launch</i></a>
                                 </span>
+
+                                <!--
+                                <span class="spanop" data-href="http://painel.controlid.com.br/Login.aspx">
+                                    <a>Painel ControliD<i class="material-icons right">launch</i></a>
+                                </span>
+                                -->
+
                             </div>
                         </li>
-                        <li>
-                            <!--link para instaladores e atualizadores-->
+
+                        <li><!--link para instaladores e atualizadores-->
                             <div class="collapsible-header"><i class="material-icons"><span class="material-icons">file_download</span></i>Instaladores</div>
                             <div class="collapsible-body" id="conteudo">
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/PontoWebComunicacaoSetup.exe" target="_blank">PontoWeb (comunicador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_pw()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://gateway.secullum.com.br/GatewayComunicacaoSetup.exe" target="_blank">Gateway (comunicador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_gat()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/SecullumCheckinSetup.exe" target="_blank">Checkin (instalador windows)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_check()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/SecullumPontoOffline-setup.exe" target="_blank">Ponto Offline (instalador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_intoff()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/at-ponto-offline.exe" target="_blank">Ponto Offline (atualizador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_atoff()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/ponto4/Pontosec4-setup.exe" target="_blank">Ponto 4 (instalador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_intp4()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/at-ponto4.exe" target="_blank">Ponto 4 (atualizador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_atp4()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/SecullumAcesso-setup.exe" target="_blank">Acesso (instalador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_intacesso()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/at-acesso.exe" target="_blank">Acesso (atualizador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_atacesso()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/acessonet/AcessoNetSetup.exe" target="_blank">Acesso.Net (instalador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_intacnet()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="https://download.secullum.com.br/at-acessonet.exe" target="_blank">Acesso.Net (atualizador)</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_atacnet()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+
                             </div>
                         </li>
-                        <li>
-                            <!--link para pacotes de comunicação-->
+
+                        <li><!--link para pacotes de comunicação-->
                             <div class="collapsible-header"><i class="material-icons"><span class="material-icons">file_download</span></i>Pacotes de Comunicação</div>
                             <div class="collapsible-body" id="conteudo">
+                                
                                 <div class="spanop">
                                     <a href="http://www.secullum.com.br/at-controlid.exe" target="_blank">ControliD</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_controlid()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="http://www.secullum.com.br/at-top.exe" target="_blank">Topdata</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_topdata()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+                                
                                 <div class="spanop">
                                     <a href="http://www.secullum.com.br/at-proveu.exe" target="_blank">Proveu</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_proveu()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+
                                 <div class="spanop">
                                     <a href="http://www.secullum.com.br/at-henry.exe" target="_blank">Henry</a>
                                     <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_henry()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
+
                             </div>
                         </li>
-                        <!--VIDEOS PROCEDIMENTOS-->
-                        <li>
+
+                        <li><!--VIDEOS PROCEDIMENTOS-->
                             <div class="collapsible-header"><i class="material-icons">video_library</i>Videos</div>
                             <div class="collapsible-body" id="conteudo">
+                                
                                 <div class="spanop">
-                                    <a  href="#">iDClass - Cadastro de empregador</a>
-                                    
+                                    <a href="#">iDClass - Cadastro de empregador</a>
                                     <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal2"><i class="material-icons">play_circle_filled</i></a>
                                     <!-- Modal Structure -->
                                     <div id="modal2" class="modal">
@@ -159,8 +200,7 @@
                                 </div>
 
                                 <div class="spanop">
-                                    <a  href="#">iDClass - Configuração de Rede</a>
-                                    
+                                    <a href="#">iDClass - Configuração de Rede</a>                                    
                                     <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
                                     <!-- Modal Structure -->
                                     <div id="modal1" class="modal">
@@ -171,6 +211,85 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="spanop">
+                                    <a href="#">iDClass - Cadastro de usuário</a>                                    
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
+                                    <!-- Modal Structure -->
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <div class="video-container">
+                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/-lis6-EBg9g?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="spanop">
+                                    <a href="#">iDClass - Troca de bobina</a>                                    
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
+                                    <!-- Modal Structure -->
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <div class="video-container">
+                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/cRwIchlCiYk?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="spanop">
+                                    <a href="#">iDClass - Remover administrador</a>                                    
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
+                                    <!-- Modal Structure -->
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <div class="video-container">
+                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/D5wiCrUa-kw?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="spanop">
+                                    <a href="#">iDClass - Calibrar o display</a>                                    
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
+                                    <!-- Modal Structure -->
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <div class="video-container">
+                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/lobwBaOeKWs?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="spanop">
+                                    <a href="#">iDClass - Configuração de Rede</a>                                    
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
+                                    <!-- Modal Structure -->
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <div class="video-container">
+                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/0Pt_XTO1Rfw" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="spanop">
+                                    <a href="#">iDClass - Update de Firmware</a>                                    
+                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
+                                    <!-- Modal Structure -->
+                                    <div id="modal1" class="modal">
+                                        <div class="modal-content">
+                                            <div class="video-container">
+                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/fFsWgE5Uj5w?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </li>
 <!--
@@ -203,16 +322,18 @@
             </div>
         </main>
     </body>
+
     <footer>
         <div class="footer-copyright">
             <div class="container">
                 <p class="center">Copyright (c) 2023 Alexandre Finotti Parnow</p>
             </div>
             <div class="container">
-                <p id="versao" class="center">Link Manager v1.0.0</p>
+                <p id="versao" class="center">Link Manager v1.0.1</p>
             </div>
         </div>
     </footer>
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/copy.js"></script>
@@ -240,12 +361,5 @@
             $('.modal').modal();
         });
     </script>
+
 </html>
-
-<!--
-    Link para web
-    https://alexandreparnow.github.io/link_manager.alstecsup/
-
-    Links Descontinuados
-    http://painel.controlid.com.br/Login.aspx
--->
