@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="css/icon.css">
         <link type="text/css" rel="stylesheet" href="css/main.css">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=place_item" />
     </head>
 
     <body>
@@ -48,6 +50,10 @@
                                 
                                 <span class="spanop" data-href="https://centraldofuncionario.com.br/47199/">
                                     <a>Central do Funcionario<i class="material-icons right">launch</i></a>
+                                </span>
+
+                                <span class="spanop" data-href="https://alstec-company.monday.com/">
+                                    <a>Monday<i class="material-icons right">launch</i></a>
                                 </span>
 
                             </div>
@@ -156,7 +162,7 @@
                         </li>
 
                         <li><!--link para pacotes de comunicação-->
-                            <div class="collapsible-header"><i class="material-icons"><span class="material-icons">file_download</span></i>Pacotes de Comunicação</div>
+                            <div class="collapsible-header"><i class="material-icons"><span class="material-icons">settings_applications</span></i>Pacotes de Comunicação</div>
                             <div class="collapsible-body" id="conteudo">
                                 
                                 <div class="spanop">
@@ -182,113 +188,48 @@
                             </div>
                         </li>
 
-                        <li><!--VIDEOS PROCEDIMENTOS-->
-                            <div class="collapsible-header"><i class="material-icons">video_library</i>Videos</div>
+                        <li><!--link para apps mobile-->
+                            <div class="collapsible-header"><i class="material-icons"><span class="material-icons">apps</span></i>APPs</div>
                             <div class="collapsible-body" id="conteudo">
                                 
                                 <div class="spanop">
-                                    <a href="#">iDClass - Cadastro de empregador</a>
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal2"><i class="material-icons">play_circle_filled</i></a>
-                                    <!-- Modal Structure -->
-                                    <div id="modal2" class="modal">
-                                        <div class="modal-content">
-                                            <div class="video-container">
-                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/mvcSxRgfZ60?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Cadastro de empregador no REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="https://play.google.com/store/apps/details?id=com.secullum.pontoweb.centraldofuncionario&hl=pt_BR" target="_blank">Central do Funcionario - Android</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_cdf_android()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
 
                                 <div class="spanop">
-                                    <a href="#">iDClass - Configuração de Rede</a>                                    
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
-                                    <!-- Modal Structure -->
-                                    <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                            <div class="video-container">
-                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/0Pt_XTO1Rfw" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="https://apps.apple.com/br/app/ponto-web-funcion%C3%A1rios/id1434571841" target="_blank">Central do Funcionario - iOS</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_cdf_ios()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                
+                                <div class="spanop">
+                                    <a href="https://play.google.com/store/apps/details?id=com.secullum.pontovirtual&hl=pt_BR" target="_blank">Ponto Virtual - Android</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_pontovirtual()"><i class="material-icons right">content_copy</i>Copiar</button>
+                                </div>
+                                
+                                <div class="spanop">
+                                    <a href="https://play.google.com/store/apps/details?id=br.com.controlid.rhid&hl=pt_BR" target="_blank">RHiD - Android</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_rhid_android()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
 
                                 <div class="spanop">
-                                    <a href="#">iDClass - Cadastro de usuário</a>                                    
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
-                                    <!-- Modal Structure -->
-                                    <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                            <div class="video-container">
-                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/-lis6-EBg9g?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="https://apps.apple.com/br/app/rhid/id1493410750" target="_blank">RHiD - iOS</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_rhid_ios()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
 
-                                <div class="spanop">
-                                    <a href="#">iDClass - Troca de bobina</a>                                    
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
-                                    <!-- Modal Structure -->
-                                    <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                            <div class="video-container">
-                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/cRwIchlCiYk?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
+                        </li>
 
+                        <li><!--link para programas utilitarios-->
+                            <div class="collapsible-header"><i class="material-icons"><span class="material-icons">build</span></i>Utilitarios</div>
+                            <div class="collapsible-body" id="conteudo">
+                                <h5>Em breve !</h5>
+                               <!-- 
                                 <div class="spanop">
-                                    <a href="#">iDClass - Remover administrador</a>                                    
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
-                                    <!-- Modal Structure -->
-                                    <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                            <div class="video-container">
-                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/D5wiCrUa-kw?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="http://www.secullum.com.br/at-controlid.exe" target="_blank">Central do Funcionario - Android</a>
+                                    <button class="waves-effect waves-yellow btn secondary-content" id="btn-color" onclick="copiainstall_controlid()"><i class="material-icons right">content_copy</i>Copiar</button>
                                 </div>
-
-                                <div class="spanop">
-                                    <a href="#">iDClass - Calibrar o display</a>                                    
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
-                                    <!-- Modal Structure -->
-                                    <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                            <div class="video-container">
-                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/lobwBaOeKWs?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="spanop">
-                                    <a href="#">iDClass - Configuração de Rede</a>                                    
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
-                                    <!-- Modal Structure -->
-                                    <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                            <div class="video-container">
-                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/0Pt_XTO1Rfw" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="spanop">
-                                    <a href="#">iDClass - Update de Firmware</a>                                    
-                                    <a id="btn-color" class="btn-floating waves-effect waves-light btn modal-trigger right" href="#modal1"><i class="material-icons">play_circle_filled</i></a>
-                                    <!-- Modal Structure -->
-                                    <div id="modal1" class="modal">
-                                        <div class="modal-content">
-                                            <div class="video-container">
-                                                <iframe width="595" height="291" src="https://www.youtube.com/embed/fFsWgE5Uj5w?list=PLDr2iFNgzDL-jWnG46-MxdVq8ydtUVjew" title="Configuração de rede do REP iDClass da Control iD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                -->
 
                             </div>
                         </li>
@@ -326,10 +267,10 @@
     <footer>
         <div class="footer-copyright">
             <div class="container">
-                <p class="center">Copyright (c) 2023 Alexandre Finotti Parnow</p>
+                <p class="center">Copyright (c) 2025 Alexandre Finotti Parnow</p>
             </div>
             <div class="container">
-                <p id="versao" class="center">Link Manager v1.0.1</p>
+                <p id="versao" class="center">Link Manager v1.0.4</p>
             </div>
         </div>
     </footer>

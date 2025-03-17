@@ -255,3 +255,89 @@ let copiainstall_henry = () => {
     //remove o elemento
     document.body.removeChild(inputTest);
 };
+
+//lista de installs-apps
+let copiainstall_cdf_android = () => {
+    //O texto que será copiado
+    const texto = "https://play.google.com/store/apps/details?id=com.secullum.pontoweb.centraldofuncionario&hl=pt_BR";
+    //Cria um elemento input (pode ser um textarea)
+    let inputTest = document.createElement("input");
+    inputTest.value = texto;
+    //Anexa o elemento ao body
+    document.body.appendChild(inputTest);
+    //seleciona todo o texto do elemento
+    inputTest.select();
+    //executa o comando copy
+    //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+    document.execCommand('copy');
+    //remove o elemento
+    document.body.removeChild(inputTest);
+};
+
+let copiainstall_cdf_ios = () => {
+    //O texto que será copiado
+    const texto = "https://apps.apple.com/br/app/ponto-web-funcion%C3%A1rios/id1434571841";
+    //Cria um elemento input (pode ser um textarea)
+    let inputTest = document.createElement("input");
+    inputTest.value = texto;
+    //Anexa o elemento ao body
+    document.body.appendChild(inputTest);
+    //seleciona todo o texto do elemento
+    inputTest.select();
+    //executa o comando copy
+    //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+    document.execCommand('copy');
+    //remove o elemento
+    document.body.removeChild(inputTest);
+};
+
+let copiainstall_pontovirtual = () => {
+    //O texto que será copiado
+    const texto = "https://play.google.com/store/apps/details?id=com.secullum.pontovirtual&hl=pt_BR";
+    //Cria um elemento input (pode ser um textarea)
+    let inputTest = document.createElement("input");
+    inputTest.value = texto;
+    //Anexa o elemento ao body
+    document.body.appendChild(inputTest);
+    //seleciona todo o texto do elemento
+    inputTest.select();
+    //executa o comando copy
+    //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+    document.execCommand('copy');
+    //remove o elemento
+    document.body.removeChild(inputTest);
+};
+
+let copiainstall_rhid_android = () => {
+    //O texto que será copiado
+    const texto = "https://play.google.com/store/apps/details?id=br.com.controlid.rhid&hl=pt_BR";
+    //Cria um elemento input (pode ser um textarea)
+    let inputTest = document.createElement("input");
+    inputTest.value = texto;
+    //Anexa o elemento ao body
+    document.body.appendChild(inputTest);
+    //seleciona todo o texto do elemento
+    inputTest.select();
+    //executa o comando copy
+    //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+    document.execCommand('copy');
+    //remove o elemento
+    document.body.removeChild(inputTest);
+};
+
+let copiainstall_rhid_ios = () => {
+    //O texto que será copiado
+    const texto = "https://apps.apple.com/br/app/rhid/id1493410750";
+    //Cria um elemento input (pode ser um textarea)
+    let inputTest = document.createElement("input");
+    inputTest.value = texto;
+    //Anexa o elemento ao body
+    document.body.appendChild(inputTest);
+    //seleciona todo o texto do elemento
+    inputTest.select();
+    //executa o comando copy
+    //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+    document.execCommand('copy');
+    //remove o elemento
+    document.body.removeChild(inputTest);
+};
